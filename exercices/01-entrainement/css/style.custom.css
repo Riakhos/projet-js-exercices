@@ -140,7 +140,7 @@ footer {
     content: attr(data-tooltip);
     position: absolute;
     left: 50%;
-    top: 110%;
+    top: 120%;
     transform: translateX(-50%);
     background: #ff9800;
     color: #222;
@@ -150,21 +150,43 @@ footer {
     white-space: pre-line;
     z-index: 10;
     box-shadow: 0 2px 8px #0004;
-    min-width: 200px;
-    max-width: 90vw;
+    width: 100%;
     pointer-events: none;
 }
 
-/* Petite flèche */
+/* Flèche pour tooltip en bas (par défaut) */
 .exo-result[data-tooltip]:hover::before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 105%;
+    top: 100%;
     transform: translateX(-50%);
     border: 8px solid transparent;
-    border-bottom-color: #222;
+    border-bottom: 12px solid #ff9800; /* Couleur identique à la bulle */
+    border-top: none;
     z-index: 11;
+}
+
+/* Flèche pour tooltip en haut */
+.exo-result.top-tooltip[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    top: auto;
+    transform: translateX(-50%) rotate(0deg);
+    border: 8px solid transparent;
+    border-top: 12px solid #ff9800; /* Couleur identique à la bulle */
+    border-bottom: none;
+    z-index: 11;
+}
+
+.exo-result.top-tooltip[data-tooltip]:hover::after {
+    left: 50%;
+    top: auto;
+    bottom: 100%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
 }
 
 /* Responsive burger menu */
