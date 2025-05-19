@@ -50,7 +50,7 @@ function dw(html) {
 }
 
 //-------------------------01 Exo 1-------------------------------//
-dw('<section class="exo"><h2>Exercice 1</h2><div class="exo1"><img id="exo1-img" src="img/a.jpg" alt="Image description"><button>Changer d\'image</button></div>')
+dw('<section class="exo"><h2>Exercice 1</h2><div class="exo1"><img id="exo1-img" src="img/a.jpg" alt="Image description"><button id="exo1-btn">Changer d\'image</button></div>')
 
 let exo1Div = document.createElement('div');
 document.getElementById('main-content').appendChild(exo1Div);
@@ -58,8 +58,8 @@ document.getElementById('main-content').appendChild(exo1Div);
 // Quand je clique sur le bout, je passe de l'image A à l'image B
 
 // Sélection (sélectionner les éléments nécessaire à la fonctionnalité) :
-let monBouton = document.getElementsByTagName('button');
-console.log(monBouton);
+let monBouton1 = document.getElementById('exo1-btn');
+console.log(monBouton1);
 
 let monImage1 = document.getElementById('exo1-img');
 console.log(monImage1);
@@ -67,7 +67,7 @@ console.log(monImage1);
 let numeroImage1 = 'a';
 
 // Évènement (on détecte l'évènement qui déclenchera la fonction) :
-monBouton[0].addEventListener('click', modifyImage);
+monBouton1.addEventListener('click', modifyImage);
 
 // Fonction (je développe la fonction) :
 function modifyImage() {
