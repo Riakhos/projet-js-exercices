@@ -1,0 +1,248 @@
+h1, h2, h3 {
+    text-align: center;
+    color: #222;
+    margin-top: 0.5em;
+}
+
+h2 {
+    background-color: #111;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: #222;
+    padding: 1em 0;
+}
+
+nav a.active,
+nav a:hover {
+    background: #ff9800;
+    color: #222;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.container, .exo, .exercice, section {
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #ff9800;
+    color: #222;
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    border-radius: 8px;
+    border: 2px solid #222;
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+}
+
+/* Design pour la liste descriptive des exercices */
+.exo ul {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    padding: 1.2em 2em;
+    margin: 1.5em auto;
+    max-width: 500px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: left;
+    font-size: 1.08em;
+    list-style: disc inside;
+}
+
+.exo ul li {
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    line-height: 1.5;
+    transition: background 0.2s;
+    border-left: 4px solid #ff9800;
+    background: #f7f7f7;
+    border-radius: 4px;
+}
+
+.exo ul li strong {
+    color: #222;
+    font-weight: bold;
+}
+
+/* Footer fixé en bas de page */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+section[class^="exo"] {
+    width: 100%;
+    max-width: 600px;
+    margin: 2em 0;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+.tp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin: 1em auto;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid #222;
+    padding: 30px;
+    transition: background 0.3s;
+}
+
+.tp-img {
+    border-radius: 8px;
+    border: 2px solid #222;
+    margin: 1em 0;
+    width: 90%;
+    height: auto;
+}
+
+.tp-link {
+    display: inline-block;
+    margin-bottom: 1em;
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.tp-link:hover {
+    background: #ff9800;
+    color: #222;
+}
+
+/* Responsive burger menu */
+#burger-menu {
+    display: none;
+    width:40px;
+    cursor:pointer;
+    margin:1em;    
+}
+
+.menu-burger{
+    margin: 0;
+    padding: 1em;
+    background-color: #222;
+}
+
+@media (max-width: 660px) {
+    #burger-menu {
+        display: block;
+    }
+    .main-nav {
+        position: relative;
+        z-index: 200;
+        position: relative;
+    }
+    .main-nav ul {
+        display: none;
+        flex-direction: column !important;
+        background: #222 !important;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100vw;
+        min-width: 100vw;
+        padding: 0;
+        margin: 0;
+        z-index: 150;
+        border-radius: 0;
+        box-shadow: 0 2px 8px #0004;
+        justify-content: flex-start !important;
+    }
+    .main-nav.active ul {
+        display: flex !important;
+    }
+    .main-nav ul li {
+        border-bottom: 1px solid #444;
+        text-align: center;
+        width: 100%;
+    }
+    .main-nav ul li:last-child {
+        border-bottom: none;
+    }
+    .main-nav ul li a {
+        color: #fff !important;
+        background: none !important;
+        padding: 1em 0;
+        display: block;
+        font-weight: bold;
+        border-radius: 0;
+    }
+    .main-nav ul li a.active {
+        background: #ff9800 !important;
+        color: #222 !important;
+        text-decoration: underline !important;
+    }
+}

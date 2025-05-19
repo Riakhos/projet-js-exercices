@@ -1,0 +1,333 @@
+h1, h2, h3 {
+    text-align: center;
+    color: #222;
+    margin-top: 0.5em;
+}
+
+h2 {
+    background-color: #111;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: #222;
+    padding: 1em 0;
+}
+
+nav a.active,
+nav a:hover {
+    background: #ff9800;
+    color: #222;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.container, .exo, .exercice, section {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #ff9800;
+    color: #222;
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    border-radius: 8px;
+    border: 2px solid #222;
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 1em 0;
+    box-sizing: border-box;
+}
+
+/* Design pour la liste descriptive des exercices */
+.exo ul {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    padding: 1.2em 2em;
+    margin: 1.5em auto;
+    max-width: 500px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: left;
+    font-size: 1.08em;
+    list-style: disc inside;
+}
+
+.exo ul li {
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    line-height: 1.5;
+    transition: background 0.2s;
+    border-left: 4px solid #ff9800;
+    background: #f7f7f7;
+    border-radius: 4px;
+}
+
+.exo ul li strong {
+    color: #222;
+    font-weight: bold;
+}
+
+/* Footer fixé en bas de page */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+/* Tooltip personnalisé */
+section.exo[data-tooltip] {
+    position: relative;
+    cursor: help;
+}
+
+/* Affichage du tooltip au survol */
+section.exo[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%) translateY(-25%);
+    background: #ff9800;
+    color: #222;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    font-size: 1.3em;
+    white-space: pre-line;
+    z-index: 10;
+    box-shadow: 0 2px 8px #0004;
+    min-width: 200px;
+    max-width: 90vw;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+section.exo[data-tooltip]::after {
+    content: '';
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.exo1 {
+    display:flex;
+    gap:2em;
+    justify-content:center;
+    align-items:center;
+}
+
+#img-grand{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    display:block;
+}
+
+#legende-img {
+    text-align:center;
+    margin-top:0.5em;
+}
+
+/* Ajoute ce CSS pour afficher les miniatures en deux colonnes */
+.miniatures-colonnes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: max-content;
+    margin: auto;
+}
+
+.miniatures-colonnes .miniature {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px #0002;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.miniatures-colonnes .miniature:hover {
+    border: 2px solid #ff9800;
+}
+
+.miniature {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    display:block;
+    cursor:pointer;
+    margin:5px;
+}
+
+#output-exo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top:1em;
+    font-weight:bold;
+}
+
+#output-exo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top:1em;
+    font-weight:bold;
+}
+
+#carre-bleu-exo4 {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    position:relative;
+    left:0;
+    transition:left 0.3s;
+}
+
+#carre-vert-exo5 {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    position:fixed;
+    top:80%;
+    left:10px;
+    transition:left 0.2s;
+}
+
+/* Responsive burger menu */
+#burger-menu {
+    display: none;
+    width:40px;
+    cursor:pointer;
+    margin:1em;    
+}
+
+.menu-burger{
+    margin: 0;
+    padding: 1em;
+    background-color: #222;
+}
+
+@media (max-width: 660px) {
+    #burger-menu {
+        display: block;
+    }
+    .main-nav {
+        position: relative;
+        z-index: 200;
+        position: relative;
+    }
+    .main-nav ul {
+        display: none;
+        flex-direction: column !important;
+        background: #222 !important;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100vw;
+        min-width: 100vw;
+        padding: 0;
+        margin: 0;
+        z-index: 150;
+        border-radius: 0;
+        box-shadow: 0 2px 8px #0004;
+        justify-content: flex-start !important;
+    }
+    .main-nav.active ul {
+        display: flex !important;
+    }
+    .main-nav ul li {
+        border-bottom: 1px solid #444;
+        text-align: center;
+        width: 100%;
+    }
+    .main-nav ul li:last-child {
+        border-bottom: none;
+    }
+    .main-nav ul li a {
+        color: #fff !important;
+        background: none !important;
+        padding: 1em 0;
+        display: block;
+        font-weight: bold;
+        border-radius: 0;
+    }
+    .main-nav ul li a.active {
+        background: #ff9800 !important;
+        color: #222 !important;
+        text-decoration: underline !important;
+    }
+}

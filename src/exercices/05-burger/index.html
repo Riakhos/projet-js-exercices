@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les dernières créations de Bruce Wayne">
+    <meta name="author" content="Richard Bonnegent">
+	<title>05 - Portfolio de Bruce Wayne</title>
+	<link rel="stylesheet" href="./css/style.custom.css">
+</head>
+<body>
+	<header>
+        <div class="menu-burger">
+            <img src="img/burger.png" alt="Menu" id="burger-menu">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../01-entrainement/index.html">01 - Entrainement</a></li>
+                <li><a href="../02-selecteurs/index.html">02 - Sélecteurs</a></li>
+                <li><a href="../03-evenements/index.html">03 - Évènements</a></li>
+                <li><a href="../04-exercices/index.html">04 - Exercices</a></li>
+                <li><a href="../05-burger/index.html" class="active">05 - Burger</a></li>
+                <li><a href="../06-TP/index.html">06 - TP</a></li>
+            </ul>
+        </nav>
+        <h1>Bruce Wayne</h1>
+        <img src="img/burger.png" alt="Menu" class="mobile">
+        <!-- Si tu veux garder la nav interne, donne-lui une classe différente -->
+        <nav class="sub-nav">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#apropos">A propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="clear"></div>
+    </header>
+	<!-- <main id="main-content"></main> -->
+
+    <section id="profil" class="fondVert">
+        <img src="img/profile.png" alt="Photo de Bruce Wayne">
+        <h2>Bruce Wayne</h2>
+        <div class="trait"></div>
+        <h3>Développeur web</h3>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="titre">Portfolio</h2>
+        <div class="trait"></div>
+        <div class="rangee">
+            <div>
+                <img src="img/cabin.png" alt="Cabin">
+            </div>
+            <div>
+                <img src="img/cake.png" alt="cake">
+            </div>
+            <div>
+                <img src="img/circus.png" alt="circus">
+            </div>
+        </div>
+        <div class="rangee">
+            <div>
+                <img src="img/game.png" alt="game">
+            </div>
+            <div>
+                <img src="img/safe.png" alt="safe">
+            </div>
+            <div>
+                <img src="img/submarine.png" alt="submarine">
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="fondVert">
+        <h2 class="titre">A propos</h2>
+        <div class="trait"></div>
+        <div class="rangee">
+            <div>
+                <h3>Formation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div>
+                <h3>Expérience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <a href="https://www.modeles-de-cv.com/wp-content/uploads/2021/01/180-modele-cv-attractif.jpg" target="_blank" rel="noopener"><i class="fas fa-download"></i> CV</a>
+    </section>
+
+    <section id="contact">
+        <h2 class="titre">Contactez moi</h2>
+        <div class="trait"></div>
+        <form>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required>
+
+            <label for="tel">Telephone</label>
+            <input type="tel" id="tel" pattern="^[0-9]{10}$" maxlength="10" required>
+
+            <label for="mail">Mail</label>
+            <input type="email" id="mail" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <input type="submit" value="Envoyer !" id="submit">
+        </form>
+    </section>
+
+    <footer>
+        <section id="informations">
+            <div>
+                <h3>Adresse</h3>
+                <p>Gotham City, New Jersey</p>
+            </div>
+            <div>
+                <h3>Mes réseaux</h3>
+                <a href="https://facebook.com" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>Copyright © Bruce Wayne</p>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19938c7b89.js" crossorigin="anonymous"></script>
+
+	<script src="./js/script.js"></script>
+</body>
+</html>

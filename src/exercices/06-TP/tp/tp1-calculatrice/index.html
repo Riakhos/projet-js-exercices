@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Travail Pratique de JavaScript - Calculatrice">
+	<meta name="author" content="Richard Bonnegent">
+	<title>Travail Pratique JS 1</title>
+	<link rel="stylesheet" href="./css/style.custom.css">
+</head>
+<body>
+	<!-- En-tête de la page -->
+	<div class="menu-burger">
+        <img src="img/burger.png" alt="Menu" id="burger-menu">
+    </div>
+
+	<!-- Navigation vers les autres exercices et travaux pratiques -->
+	<nav class="main-nav">
+		<ul>
+            <li><a href="../../../../index.html">Accueil</a></li>
+            <li><a href="../../../01-entrainement/index.html">01 - Entrainement</a></li>
+            <li><a href="../../../02-selecteurs/index.html">02 - Sélecteurs</a></li>
+            <li><a href="../../../03-evenements/index.html">03 - Évènements</a></li>
+            <li><a href="../../../04-exercices/index.html">04 - Exercices</a></li>
+            <li><a href="../../../05-burger/index.html">05 - Burger</a></li>
+            <li><a href="../../../06-TP/index.html" class="active">06 - TP</a></li>
+        </ul>
+	</nav>
+
+	<!-- Formulaire de la calculatrice -->
+	<main id="main-content">
+		<div class="exo">
+			<button id="toggle-calc-btn" type="button">Faire apparaître la calculatrice</button>
+			<form id="calculatrice-form">
+				<label for="number2">Premier nombre :</label>
+				<input type="number" id="number1" placeholder="Entrez un nombre">
+				<label for="operation">Opération :</label>
+				<select id="operation">
+					<option value="plus">+</option>
+					<option value="moins">-</option>
+					<option value="fois">*</option>
+					<option value="diviser">/</option>
+				</select>
+				<label for="number2">Second nombre :</label>
+				<input type="number" id="number2" placeholder="Entrez un nombre">
+				<input type="submit" id="calculer-btn" value="Calculer">
+			</form>
+		</div>
+	</main>
+
+	<!-- Footer avec les liens vers les autres TP -->
+	<footer>
+        <nav>
+            <ul>
+                <li><a href="../tp1-calculatrice/index.html" class="active">TP 1</a></li>
+                <li><a href="../tp2-exercice-interaction-js/index.html">TP 2</a></li>
+                <li><a href="../tp3-exercices-interface-dynamiques-js/index.html">TP 3</a></li>
+                <li><a href="../../index.html">Retour à la liste des TP</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+	<script src="./js/script_optimiser.js"></script>
+</body>
+</html>
