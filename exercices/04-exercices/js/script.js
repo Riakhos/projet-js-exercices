@@ -50,7 +50,7 @@ function dw(html) {
 }
 
 //-------------------------01 Exo 1-------------------------------//
-dw('<section class="exo"><h2>Exercice 1</h2><div class="exo1"><img src="img/a.jpg" alt="Image description"><button>Changer d\'image</button></div>')
+dw('<section class="exo"><h2>Exercice 1</h2><div class="exo1"><img id="exo1-img" src="img/a.jpg" alt="Image description"><button>Changer d\'image</button></div>')
 
 let exo1Div = document.createElement('div');
 document.getElementById('main-content').appendChild(exo1Div);
@@ -61,7 +61,7 @@ document.getElementById('main-content').appendChild(exo1Div);
 let monBouton = document.getElementsByTagName('button');
 console.log(monBouton);
 
-let monImage1 = document.getElementsByTagName('img');
+let monImage1 = document.getElementById('exo1-img');
 console.log(monImage1);
 
 let numeroImage1 = 'a';
@@ -76,10 +76,10 @@ function modifyImage() {
 	if (numeroImage1 == 'a') {
 		numeroImage1 = 'b';
 		// Tu changes l'image A en image B :
-		monImage1[0].src = 'img/' + numeroImage1 + '.jpg';
+		monImage1.src = 'img/' + numeroImage1 + '.jpg';
 	} else {
 		numeroImage1 = 'a';
-		monImage1[0].src = 'img/' + numeroImage1 + '.jpg';
+		monImage1.src = 'img/' + numeroImage1 + '.jpg';
 	}
 }
 dw('</section>');
