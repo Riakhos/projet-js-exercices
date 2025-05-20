@@ -50,7 +50,7 @@ function dw(html) {
 }
 
 //--------------------------------------01 Click----------------------------------//
-dw('<h2>01 Click</h2><div class="bleu">click</div>');
+dw('<section class="exo"><h2>01 Click</h2><div class="bleu">click</div>');
 
 // Quand je clique sur la div bleu, je fais apparaître une alerte pour dire un message.
 
@@ -67,8 +67,10 @@ function click() {
 	alert('Vous avez cliqué !');
 }
 
+dw('</section>');
+
 //-----------------------------------02 dblClick----------------------------------//
-dw('<h2>02 dblClick</h2><div class="rouge">dblclick</div>');
+dw('<section class="exo"><h2>02 dblClick</h2><div class="rouge">dblclick</div>');
 
 // Sélectionner ma div :
 let selection2 = document.getElementsByClassName('rouge');
@@ -85,8 +87,10 @@ function dblclick() {
 	alert('Vous avez double cliqué !');
 }
 
+dw('</section>');
+
 //-----------------------------------03 mouseover---------------------------------//
-dw('<h2>03 mouseover</h2><div class="jaune">mouseover</div>');
+dw('<section class="exo"><h2>03 mouseover</h2><div class="jaune">mouseover</div>');
 
 // Sélectionner ma div :
 let selection3 = document.getElementsByClassName('jaune');
@@ -103,8 +107,10 @@ function mouseover() {
 	alert('Vous avez fait un survol sur la div jaune !');
 }
 
+dw('</section>');
+
 //-----------------------------------04 mouseout---------------------------------//
-dw('<h2>04 mouseout</h2><div class="vert">mouseout</div>');
+dw('<section class="exo"><h2>04 mouseout</h2><div class="vert">mouseout</div>');
 
 // Sélectionner ma div :
 let selection4 = document.getElementsByClassName('vert');
@@ -121,8 +127,10 @@ function mouseout() {
 	alert('Vous êtes sorti du survol de la div verte !');
 }
 
+dw('</section>');
+
 //-----------------------------------05 blur--------------------------------------//
-dw('<h2>05 blur</h2><div class="rose"><input type="text" id="input-blur" placeholder="Entrez du texte" title="Champ de texte pour blur">blur</div>');
+dw('<section class="exo"><h2>05 blur</h2><div class="rose"><input type="text" id="input-blur" placeholder="Entrez du texte" title="Champ de texte pour blur">blur</div>');
 
 // Sélectionner ma div :
 let selection5 = document.getElementsByTagName('input');
@@ -139,8 +147,10 @@ function fcblur() {
 	alert("Vous avez désélectionné le champ de la div rose !");
 }
 
+dw('</section>');
+
 //----------------------------------06 hover--------------------------------------//
-dw('<h2>06 focus</h2><div class="orange"><input type="text" id="input-focus" placeholder="Entrez du texte" title="Champ de texte pour focus">focus</div>');
+dw('<section class="exo"><h2>06 focus</h2><div class="orange"><input type="text" id="input-focus" placeholder="Entrez du texte" title="Champ de texte pour focus">focus</div>');
 
 // Sélectionner ma div :
 let selection6 = document.getElementById('input-focus');
@@ -156,3 +166,5 @@ selection6.addEventListener('focus', focus);
 function focus() {
 	alert('Vous avez sélectionné le champ de la div orange !');
 }
+
+dw('</section>');

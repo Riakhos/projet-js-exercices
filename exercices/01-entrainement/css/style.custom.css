@@ -50,10 +50,9 @@ nav a {
 }
 
 .container, .exo, .exercice, section {
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin: 2em auto;
-    padding: 2em;
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 8px #0001;
@@ -111,7 +110,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 8px #0001;
     margin: 2em auto;
-    padding: 2em;
     max-width: 600px;
     width: 90%;
     text-align: center;
@@ -208,7 +206,6 @@ footer {
         display: block;
     }
     .main-nav {
-        position: relative;
         z-index: 200;
         position: relative;
     }

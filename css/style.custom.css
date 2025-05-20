@@ -155,7 +155,6 @@ footer {
         display: block;
     }
     .main-nav {
-        position: relative;
         z-index: 200;
         position: relative;
     }

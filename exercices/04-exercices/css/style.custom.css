@@ -53,7 +53,6 @@ nav a {
     width: 100%;
     max-width: 600px;
     margin: 2em auto;
-    padding: 2em;
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 8px #0001;
@@ -117,7 +116,6 @@ section[class^="exo"] {
     width: 100%;
     max-width: 600px;
     margin: 2em 0;
-    padding: 2em;
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 8px #0001;
@@ -440,5 +438,35 @@ section[class^="exo"] {
         background: #ff9800 !important;
         color: #222 !important;
         text-decoration: underline !important;
+    }
+    .exo1 {
+        width: 90%;
+    }
+    .exo1 img {
+        width: 100%;
+        height: auto;
+    }
+    #exo6-next, #exo6-prev {
+        order: 2;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .exo6 img {
+        order: 1;
+        width: 100%;
+        max-width: 400px;
+    }
+    .exo6 {
+        width: 90%;
+    }
+    /* On inverse l'ordre visuel */
+    .exo6 {
+        flex-direction: column;
+    }
+    #exo6-next, #exo6-prev, .exo6 img {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
